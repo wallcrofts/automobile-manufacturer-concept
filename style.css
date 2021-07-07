@@ -1,1 +1,125 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #4b4b4b;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  margin: 0 2em;
+}
+
+#vertical-nav {
+  position: fixed;
+  top: 85%;
+  left: 2%;
+  bottom: auto;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#vertical-nav ul {
+  list-style: none;
+}
+
+#vertical-nav li {
+  text-align: left;
+  margin: -.5em 0;
+}
+
+#vertical-nav li:nth-last-child(-n+3) {
+  opacity: 0.9;
+}
+
+#vertical-nav li:nth-last-child(-n+2) {
+  opacity: 0.7;
+}
+
+#vertical-nav li:nth-last-child(-n+1) {
+  opacity: 0.5;
+}
+
+#vertical-nav .cd-dot {
+  position: relative;
+  top: 8px;
+  height: 16.5px;
+  width: 16.5px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: #0e0e0e;
+  -webkit-transition: -webkit-transform 0.2s, border 0.5s;
+  -webkit-transition: border 0.5s, -webkit-transform 0.2s;
+  transition: border 0.5s, -webkit-transform 0.2s;
+  transition: transform 0.2s, border 0.5s;
+  transition: transform 0.2s, border 0.5s, -webkit-transform 0.2s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+#vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: 0.5em 0.5em;
+  color: white;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+#vertical-nav a {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#vertical-nav a span {
+  float: left;
+  display: inline-block;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+#vertical-nav a:hover span {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+#vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+
+#vertical-nav a.is-selected .cd-dot {
+  border: 2px solid red;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/*# sourceMappingURL=style.css.map */
