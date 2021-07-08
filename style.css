@@ -14,6 +14,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 section {
   position: relative;
   height: 100vh;
@@ -26,6 +32,53 @@ section {
   background-image: url("img/background-image.png");
   background-size: cover;
   background-position: center center;
+}
+
+.main-nav {
+  z-index: 1;
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav img {
+  height: 25px;
+  width: auto;
+  margin: 0 65px;
+}
+
+.main-nav ul:first-child li {
+  margin-right: 35px;
+}
+
+.main-nav ul:last-child li {
+  margin-left: 35px;
+}
+
+.main-nav ul li {
+  display: inline;
+}
+
+.main-nav ul li a {
+  color: #0F0F0F;
+  font-size: 20px;
 }
 
 #vertical-nav {
