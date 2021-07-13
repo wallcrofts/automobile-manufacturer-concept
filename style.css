@@ -122,6 +122,78 @@ section {
   background-position: center center;
 }
 
+.mouse {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  cursor: ns-resize;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mouse-shape {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 65px;
+  margin: 0 auto 15px;
+  border: 3px solid #FFF;
+  border-radius: 22px;
+}
+
+.mouse-shape .mouse-animation {
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: #FFF;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  -webkit-animation: ball-scroll 2s linear infinite;
+          animation: ball-scroll 2s linear infinite;
+}
+
+@-webkit-keyframes ball-scroll {
+  0% {
+    opacity: 1;
+    top: 25%;
+  }
+  20% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 75%;
+  }
+  100% {
+    opacity: 0;
+    top: 25%;
+  }
+}
+
+@keyframes ball-scroll {
+  0% {
+    opacity: 1;
+    top: 25%;
+  }
+  20% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 75%;
+  }
+  100% {
+    opacity: 0;
+    top: 25%;
+  }
+}
+
 #vertical-nav {
   position: fixed;
   top: 85%;
