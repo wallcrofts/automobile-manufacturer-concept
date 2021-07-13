@@ -20,6 +20,7 @@ a {
     z-index: 1;
     position: fixed;
     width: 100%;
+    padding: 35px 100px;
     display: flex;
     ul {
         list-style: none;
@@ -28,8 +29,8 @@ a {
         li {
             display: inline;
             a {
-                color: #3C3C3C;
                 font-size: 20px;
+                color: #3C3C3C;
             }
         }
     }
@@ -37,17 +38,39 @@ a {
         flex: 1;
         display: flex;
     }
+    .menu-button {
+        justify-content: flex-start;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .left-row {
+        justify-content: flex-end;
+        ul li {
+            margin-left: 35px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
     .logo-wrapper {
         justify-content: center;
         img {
             width: 200px;
         }
     }
-    .left-row {
-        justify-content: flex-end;
-    }
     .right-row {
         justify-content: flex-start;
+        ul li {
+            margin-right: 35px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .icons {
+        flex-grow: 0;
+        flex-shrink: 0;
+        justify-content: flex-end;
     }
 }
 
