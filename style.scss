@@ -1,7 +1,6 @@
 @import "scss/partials/variables";
 @import "scss/partials/mixins";
 
-
 *,*:after,*:before { 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -16,12 +15,45 @@ html, body {
 a {
     text-decoration: none;
 }
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 
+.website-upper-navbar {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline;
+            a {
+                color: #3C3C3C;
+                font-size: 20px;
+            }
+        }
+    }
+    .upper-navbar-row {
+        flex: 1;
+        display: flex;
+    }
+    .logo-wrapper {
+        justify-content: center;
+        img {
+            width: 200px;
+        }
+    }
+    .left-row {
+        justify-content: flex-end;
+    }
+    .right-row {
+        justify-content: flex-start;
+    }
 }
+
+
+
+
 
 section {
     position: relative;
@@ -40,42 +72,9 @@ section {
     background-position: center center;
 }
 
-.main-nav {
-    z-index: 1;
-    position: fixed;
-    top: 75px;
-    width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: center;
-   
-    img {
-        height: 25px;        
-        width: auto; 
-        margin: 0 65px;
-    }
-
-    ul:first-child li {
-        margin-right: 35px;
-    }
-    ul:last-child li {
-        margin-left: 35px;
-    }
-    ul li {
-        display: inline;
-        a {
-            color: #0F0F0F;
-            font-size: 20px;
-        
-          
-        }
-
-    }
-    
-}
 
 @import "scss/modules/dotted-side-nav";
+
+
+
