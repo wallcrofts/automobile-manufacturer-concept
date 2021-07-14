@@ -115,6 +115,43 @@ section {
   padding: 0;
 }
 
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+section img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+section .reveal {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
 .section-model3 {
   top: 0;
   background-image: url("img/background-image.png");
