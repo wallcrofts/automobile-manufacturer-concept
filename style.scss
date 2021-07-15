@@ -7,7 +7,7 @@
     box-sizing: border-box; 
 }
 html, body {
-    background-color: #E8E8E8;
+    background-color: #FDFDFD;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -96,21 +96,22 @@ section {
         position: relative;
       }
     img {
-        height: 100%;
-        width: 100%;
+      
+        width: 50%;
         object-fit: cover;
-        transform-origin: bottom; // that targets the image movement not curtain
+        //transform-origin: bottom; // that targets the image movement not curtain
     }
     .reveal {
         visibility: hidden;
         position: relative;
         width: 80%;
         height: 80%;
-        max-width: 500px;
+        
         overflow: hidden;
     }
 }
 
+/* 
 .section-model3 {
     top: 0;
     background-image: url("img/background-image.png");
@@ -120,7 +121,7 @@ section {
     background-size: cover;
     background-position: center center;
 }
-
+*/
 
 
 @import "scss/modules/dotted-side-nav";
