@@ -20,28 +20,28 @@
 </head>
 <body>
     <nav class="website-upper-navbar">
-        <div class="upper-navbar-row menu-button">
-            placeholder
+
+
+        <div class="logo-wrapper">
+            <img src="img/tesla-logo.png" alt="">
         </div>
-        <div class="upper-navbar-row left-row">
-            <ul>
-                <li><a href="http://">Cars</a></li>
-                <li><a href="http://">Powerwall</a></li>
-                <li><a href="http://">Charging</a></li>
-            </ul>
+
+
+        <div class="right-side">
+            <div class="links-wrapper">
+                <ul>
+                    <li><a href="http://">Shop</a></li>
+                    <li><a href="http://">Account</a></li>
+                </ul>
+            </div>
+            <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
         </div>
-        <div class="upper-navbar-row logo-wrapper">
-            <img src="img/tesla-logo.png"  alt="website-logo">
-        </div>
-        <div class="upper-navbar-row right-row">
-            <ul>
-                <li><a href="http://">News</a></li>
-                <li><a href="http://">Shop</a></li>
-            </ul>
-        </div>
-        <div class="upper-navbar-row icons">
-            placeholder
-        </div>
+
 
     </nav>
 
@@ -114,6 +114,15 @@
 
     <script src="js/dottedSideNav.js"></script>
     <script src="js/imageRevealGSAP.js"></script>
+
+    <script>
+        $(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+    </script>
 
     <!-- lagging glitch on first page
     <script src="js/onePageScroll.js"></script> -->
