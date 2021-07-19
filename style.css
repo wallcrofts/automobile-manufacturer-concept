@@ -14,6 +14,61 @@ a {
   text-decoration: none;
 }
 
+section {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+section img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .reveal {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.section-model3 {
+  top: 0;
+  background-image: url("img/background-image.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.smoke-background {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .website-upper-navbar {
   z-index: 1;
   position: fixed;
@@ -124,57 +179,6 @@ a {
   left: 50%;
 }
 
-section {
-  position: relative;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-section .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-section img {
-  width: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-section .reveal {
-  visibility: hidden;
-  position: relative;
-  width: 80%;
-  height: 80%;
-  overflow: hidden;
-}
-
-/* 
-.section-model3 {
-    top: 0;
-    background-image: url("img/background-image.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-}
-*/
 #vertical-nav {
   position: fixed;
   z-index: 1;
@@ -191,8 +195,9 @@ section .reveal {
 
 #vertical-nav li {
   text-align: left;
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  margin-bottom: 50px;
 }
 
 #vertical-nav .cd-dot {
@@ -200,7 +205,7 @@ section .reveal {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  border: 1px solid #3C3C3C;
+  border: .75px solid #3C3C3C;
   /*
     -webkit-transition: -webkit-transform 0.2s, border 0.5s;
     -moz-transition: -moz-transform 0.2s, border 0.5s;
@@ -209,7 +214,12 @@ section .reveal {
 
 #vertical-nav .cd-label {
   position: relative;
-  color: #C70006;
+  color: #be3439;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-family: 'Lato', sans-serif;
+  margin-left: 25px;
   text-transform: uppercase;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
@@ -220,12 +230,6 @@ section .reveal {
   display: inline-block;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: padding 400ms ease-in-out;
-  transition: padding 400ms ease-in-out;
-}
-
-#vertical-nav a:hover {
-  padding: 20px 0;
 }
 
 #vertical-nav a:after {
@@ -236,37 +240,31 @@ section .reveal {
 
 #vertical-nav a span {
   display: inline-block;
-  /*
-        -webkit-transform: scale(0.5);
-        -moz-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        -o-transform: scale(0.5);
-        transform: scale(0.5);
-*/
-}
-
-#vertical-nav a:hover span {
-  /*
-        -webkit-transform: scale(0.7);
-        -moz-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        -o-transform: scale(0.7);
-        transform: scale(0.7);
-        */
+  opacity: 0.3;
 }
 
 #vertical-nav a:hover .cd-label {
   opacity: 1;
 }
 
-#vertical-nav a.is-selected .cd-dot {
-  background-color: #C70006;
+#vertical-nav a:hover .cd-dot {
+  background-color: #be3439;
+  opacity: 1;
   border: none;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+}
+
+#vertical-nav a.is-selected .cd-dot {
+  -webkit-box-shadow: 16px 0px 25px #be3439;
+          box-shadow: 16px 0px 25px #be3439;
+  background-color: #be3439;
+  border: none;
+  opacity: 1;
 }
 
 #vertical-nav a.is-selected .cd-label {
   opacity: 1;
+  text-shadow: 0px 2px 25px #be3439;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=style.css.map */

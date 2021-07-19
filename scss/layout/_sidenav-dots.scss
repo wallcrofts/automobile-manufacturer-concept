@@ -11,7 +11,8 @@
     }
     li {
         text-align: left;
-        transition: 0.5s ease-in;
+        transition: 0.25s ease-in-out;
+        margin-bottom: 50px;
     }
 
 }
@@ -24,9 +25,9 @@
 
     height: 10px;
     width: 10px;
-
+    
     border-radius: 50%;
-    border: 1px solid #3C3C3C ;
+    border: .75px solid #3C3C3C ;
 /*
     -webkit-transition: -webkit-transform 0.2s, border 0.5s;
     -moz-transition: -moz-transform 0.2s, border 0.5s;
@@ -34,13 +35,19 @@
 
 
 }
+
 #vertical-nav .cd-label {
     position: relative;
 
-    color: #C70006;
+    color: $red;
 
- 
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-family: 'Lato', sans-serif;
+    
 
+    margin-left: 25px;
 
     text-transform: uppercase;
 
@@ -52,14 +59,12 @@
 
 }
 #vertical-nav a {
+
+
         display: inline-block;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
 
-        transition: padding 400ms ease-in-out;
-        &:hover {
-            padding: 20px 0;
-        }
   
 }
 #vertical-nav a:after {
@@ -71,42 +76,31 @@
 
 
 #vertical-nav a span {
-
-        display: inline-block;
-/*
-        -webkit-transform: scale(0.5);
-        -moz-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        -o-transform: scale(0.5);
-        transform: scale(0.5);
-*/
-
-}
-#vertical-nav a:hover span {
-    /*
-        -webkit-transform: scale(0.7);
-        -moz-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        -o-transform: scale(0.7);
-        transform: scale(0.7);
-        */
+    display: inline-block;
+    opacity: 0.3;
+    //transition: all 0.25s;
 }
 
 #vertical-nav a:hover .cd-label {
     opacity: 1;
 }
+#vertical-nav a:hover .cd-dot {
+    background-color: $red;
+    opacity: 1;
+    border: none;
+}
 
 
 
 #vertical-nav a.is-selected .cd-dot {
-    background-color: #C70006;
+    box-shadow: 16px 0px 25px $red;
+    background-color: $red;
     border: none;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
+    opacity: 1;
 }
 #vertical-nav a.is-selected .cd-label {
     opacity: 1;
+    text-shadow: 0px 2px 25px $red;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
