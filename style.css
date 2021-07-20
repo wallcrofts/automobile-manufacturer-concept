@@ -160,10 +160,6 @@ a {
   width: 10px;
   border-radius: 50%;
   border: .75px solid #3C3C3C;
-  /*
-    -webkit-transition: -webkit-transform 0.2s, border 0.5s;
-    -moz-transition: -moz-transform 0.2s, border 0.5s;
-    transition: transform 0.2s, border 0.5s; */
 }
 
 #vertical-nav .cd-label {
@@ -181,9 +177,11 @@ a {
 }
 
 #vertical-nav a {
+  position: relative;
   display: inline-block;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  vertical-align: middle;
 }
 
 #vertical-nav a:after {
@@ -203,7 +201,6 @@ a {
 
 #vertical-nav a:hover .cd-dot {
   background-color: #be3439;
-  opacity: 1;
   border: none;
 }
 
@@ -216,10 +213,10 @@ a {
 }
 
 #vertical-nav a.is-selected .cd-label {
-  opacity: 1;
   text-shadow: 0px 2px 25px #be3439;
   font-size: 16px;
   letter-spacing: 2px;
+  opacity: 1;
 }
 
 section {
@@ -266,11 +263,12 @@ section {
 
 .smoke-overlay {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
 }
 
 .hero-image-container {
