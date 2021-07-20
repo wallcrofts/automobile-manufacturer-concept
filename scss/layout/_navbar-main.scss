@@ -1,5 +1,5 @@
 .website-upper-navbar {
-    z-index: 1;
+    z-index: 99;
     position: fixed;
     width: 100%;
     padding: 35px 100px;
@@ -42,7 +42,8 @@
         }
     }
     .links-wrapper {
-      
+      display: flex;
+      align-items: center;
     }
 
 }

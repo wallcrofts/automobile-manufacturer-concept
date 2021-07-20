@@ -1,3 +1,21 @@
+@mixin backgroundCover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @mixin noUserSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none; 

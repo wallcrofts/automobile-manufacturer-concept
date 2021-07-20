@@ -4,7 +4,7 @@
 }
 
 html, body {
-  background-color: #FDFDFD;
+  background-color: #E9E9E9;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
@@ -14,63 +14,8 @@ a {
   text-decoration: none;
 }
 
-section {
-  position: relative;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-section .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-section img {
-  width: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-section .reveal {
-  visibility: hidden;
-  position: relative;
-  width: 80%;
-  height: 80%;
-  overflow: hidden;
-}
-
-.section-model3 {
-  top: 0;
-  background-image: url("img/background-image.png");
-  background-size: cover;
-  background-position: center center;
-}
-
-.smoke-background {
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .website-upper-navbar {
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   width: 100%;
   padding: 35px 100px;
@@ -117,6 +62,15 @@ section .reveal {
 
 .website-upper-navbar .right-side ul li:last-child {
   margin-right: 50px;
+}
+
+.website-upper-navbar .links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #nav-icon3 {
@@ -240,7 +194,7 @@ section .reveal {
 
 #vertical-nav a span {
   display: inline-block;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 #vertical-nav a:hover .cd-label {
@@ -266,5 +220,99 @@ section .reveal {
   text-shadow: 0px 2px 25px #be3439;
   font-size: 16px;
   letter-spacing: 2px;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.reveal {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.model-three-section {
+  top: 0;
+  background-image: url("img/background-image.png");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.smoke-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-image-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-image-model-three {
+  z-index: 2;
+  width: 55%;
+  position: relative;
+  left: 3%;
+}
+
+.hero-image-text {
+  z-index: 1;
+  position: absolute;
+  top: 1%;
+  color: #353535;
+  font-family: 'Lato', sans-serif;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.red-underlay {
+  z-index: 1;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
