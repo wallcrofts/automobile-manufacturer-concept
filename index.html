@@ -8,8 +8,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="node_modules/normalize.css/">
     <link rel="stylesheet" href="style.css">
@@ -116,22 +116,34 @@
 
     </section>
 
-
-
+    <script src="js/onePageScroll.js"></script>
     <script src="js/dottedSideNav.js"></script>
+
+    <script src="js/menuButtonAnimation.js"></script>
     <script src="js/imageRevealGSAP.js"></script>
 
-    <script>
-        $(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	});
-});
 
+
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 750;
+        function hidePreloader() {
+            var preloader = $('.spinner-wrapper');
+            preloader.delay(2000).fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
     </script>
 
-    <!-- lagging glitch on first page
-    <script src="js/onePageScroll.js"></script> -->
-
 </body>
+
+<!-- CSS page preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
+
 </html>

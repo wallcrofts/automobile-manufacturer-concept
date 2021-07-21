@@ -14,7 +14,7 @@ function scrollPage(e) {
   if (e.deltaY < 0) {
     e.preventDefault();
     if(nodesName.includes(prev.nodeName)) {
-      verticalScroll(prev, 1500, 'easeInOutCubic');
+      verticalScroll(prev, 750, 'easeInOutCubic');
       e.target.closest(nodesName).classList.remove('active')
       prev.classList.add('active')
     }
@@ -22,7 +22,7 @@ function scrollPage(e) {
   } else if (e.deltaY > 0) {
     e.preventDefault();
     if(nodesName.includes(next.nodeName)) {
-      verticalScroll(next, 1500, 'easeInOutQuad', runAfter);
+      verticalScroll(next, 750, 'easeInOutQuad', runAfter);
       e.target.closest(nodesName).classList.remove('active');
       next.classList.add('active');
     }
