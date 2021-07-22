@@ -47,3 +47,11 @@ jQuery(document).ready(function($){
         );
 	}
 });
+
+$('#vertical-nav').mouseover(function () {
+	$(this).css("z-index", "99")
+});
+
+$('#vertical-nav').mouseout(function () {
+	$(this).css("z-index", "1")
+});

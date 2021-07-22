@@ -90,7 +90,13 @@
             <img src="img/hero-model-three.png" alt="tesla-model-three-hero" class="hero-image-model-three">
             <img class="red-underlay" src="img/red-underlay.png">
         </div>
-
+        <div class="bottom-text-container">
+            <div class="reserve-wrapper">
+                <a href="http://">Reserve Now</a>
+                <a href="http://">Order online for <u>touchless delivery</u></a>
+                <a href="http://">Custom order</a>
+            </div>
+        </div>
     </section>
 
     
@@ -116,25 +122,14 @@
 
     </section>
 
-    <script src="js/onePageScroll.js"></script>
+    <script src="js/pagePreloader.js"></script>
+
+    <!--
+    <script src="js/onePageScroll.js"></script>-->
     <script src="js/dottedSideNav.js"></script>
 
     <script src="js/menuButtonAnimation.js"></script>
     <script src="js/imageRevealGSAP.js"></script>
-
-
-
-    <script>
-        $(document).ready(function() {
-        //Preloader
-        preloaderFadeOutTime = 750;
-        function hidePreloader() {
-            var preloader = $('.spinner-wrapper');
-            preloader.delay(2000).fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-        });
-    </script>
 
 </body>
 

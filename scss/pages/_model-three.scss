@@ -42,3 +42,26 @@
     z-index: 1;
     position: absolute;
 }
+
+.bottom-text-container {
+    position: relative;
+    z-index: 5;
+    bottom: 15%;
+    text-align: center;
+}
+.reserve-wrapper {
+    a {
+        margin: 0 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 14px;
+        vertical-align: middle;
+        font-weight: bold;
+        color: $grey;
+    }
+    a:first-child {
+        color: $red;
+        font-size: 26px;
+        letter-spacing: 2.5px;
+    }
+}
