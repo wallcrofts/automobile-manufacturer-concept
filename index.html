@@ -18,8 +18,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/swiper.min.css">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/swiper.jquery.min.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+  <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/swiper.min.css">
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/swiper.jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
 </head>
 <body>
+    <div class="cursor" id="cursor">
+        <div class="circle" id="circle"></div>
+    </div>
+
     <nav class="website-upper-navbar">
 
 
@@ -57,25 +75,37 @@
             <li>
                 <a href="#section2" data-number="2">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Overview</span>
+                    <span class="cd-label">Model Y</span>
                 </a>
             </li>
             <li>
                 <a href="#section3" data-number="3">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Made to Fly</span>
+                    <span class="cd-label">Model S</span>
                 </a>
             </li>
             <li>
                 <a href="#section4" data-number="4">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Ride in Style</span>
+                    <span class="cd-label">Model X</span>
                 </a>
             </li>
             <li>
                 <a href="#section5" data-number="5">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Specs</span>
+                    <span class="cd-label">Solar Roof</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section6" data-number="6">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Solar Panels</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section7" data-number="7">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Accessories</span>
                 </a>
             </li>
         </ul>
@@ -84,19 +114,121 @@
 
 
     <section id="section1" class="main-section model-three-section js-main-section">
-        <img class="smoke-overlay" src="img/smoke-overlay.png">
-        <div class="hero-image-container">
-            <h1 class="hero-image-text">Tesla Model 3</h1>
-            <img src="img/hero-model-three.png" alt="tesla-model-three-hero" class="hero-image-model-three">
-            <img class="red-underlay" src="img/red-underlay.png">
-        </div>
-        <div class="bottom-text-container">
-            <div class="reserve-wrapper">
-                <a href="http://">Reserve Now</a>
-                <a href="http://">Order online for <u>touchless delivery</u></a>
-                <a href="http://">Custom order</a>
+
+        <section class="subsection-one">
+
+            <img class="smoke-overlay" src="img/smoke-overlay.png">
+            <div class="hero-image-container">
+                <h1 class="hero-image-text">Tesla Model 3</h1>
+                <img src="img/hero-model-three.png" alt="tesla-model-three-hero" class="hero-image-model-three">
+                <img class="red-underlay" src="img/red-underlay.png">
+            </div>
+            <div class="bottom-text-container">
+                <div class="specs-container">
+
+                    <div class="spec-wrapper speed-spec">
+                        <img src="img/icons/speed.png">
+                        <h4>3.1<span class="lowercase">s</span></h4>
+                        <h6>0-60mph</h6>
+                    </div>
+
+                    <div class="spec-wrapper range-spec">
+                        <h4>351 <span class="lowercase">mi</span></h4>
+                        <h6>Range (EPA est.)</h6>
+                    </div>
+
+                    <div class="spec-wrapper drive-spec">
+                        <h4>AWD</h4>
+                        <h6>Dual Motor</h6>
+                    </div>
+
+                </div>
+                <div class="reserve-wrapper">
+                    <a href="http://">Reserve Now</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="subsection-two">
+            <img class="smoke-overlay" src="img/smoke-overlay-cont.png">
+            
+        <div class="test">
+            <div class="cards-header">
+                <div class="game-cards_heading">
+                  <span class="heading_subtitle">Welcome to</span>
+                  <h2 class="heading_title">the Adventure</h2>
+                </div>
+                <div class="game-cards_introduction">
+                  <p class="game-cards_description">Obsidian creates games focused on rich stories, unforgettable characters and vast worlds</p>
+                  <p class="game-cards_description">Explore vast ruins, battle deadly enemies, and claim otherworldly artifacts. Fight the dangers of an ever-changing world. Rise united to defeat evil.</p>
+                </div>
+        
+                <div class="game-cards_nav-buttons">
+                      <div class="swiper-button-next">
+                        <svg id="nextBtn" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65">
+                          <path d="M32.5 0A32.5 32.5 0 1 0 65 32.5 32.5 32.5 0 0 0 32.5 0zm0 62A29.5 29.5 0 1 1 62 32.5 29.53 29.53 0 0 1 32.5 62zm-5.22-40.28L38.06 32.5 27.28 43.28l2.12 2.12 12.9-12.9-12.9-12.9z"/>
+                        </svg>
+                      </div>
+                    
+                      <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="prevBtn" data-name="Layer 1" viewBox="0 0 65 65">
+                          <path d="M0 32.5A32.5 32.5 0 1 0 32.5 0 32.5 32.5 0 0 0 0 32.5zm3 0A29.5 29.5 0 1 1 32.5 62 29.53 29.53 0 0 1 3 32.5zm32.6-12.9L22.7 32.5l12.9 12.9 2.12-2.12L26.94 32.5l10.78-10.78z"/>
+                        </svg>
+                      </div>
+                </div>
+        
+              </div>
+
+              <div class="game-cards_swiper-container">
+                  <div class="swiper-wrapper">
+
+
+                            <div class="swiper-slide sl--slide">
+                                <div class="slide-cover"></div>
+                                <div class="sl-card-wrapper">
+                                    <div class="card_bottom-gradient"></div>
+                                    <div class="card_cover cover_outer-worlds"></div>
+                                    <div class="sl--content-wrapper sl--content-wrapper-inactive">
+                                        <img src="img/game-cards/logos/outerworlds-logo.png" class="card-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                            <div class="swiper-slide sl--slide">
+                                <div class="slide-cover"></div>
+                                <div class="sl-card-wrapper">
+                                    <div class="card_bottom-gradient"></div>
+                                    <div class="card_cover cover_pillars-of-eternity-deadfire"></div>
+                                    <div class="sl--content-wrapper sl--content-wrapper-inactive">
+                                        <img src="img/game-cards/logos/poed-logo.png" class="card-logo">
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                            <div class="swiper-slide sl--slide">
+                                <div class="slide-cover"></div>
+                                <div class="sl-card-wrapper">
+                                    <div class="card_bottom-gradient"></div>
+                                    <div class="card_cover cover_tyranny"></div>
+                                    <div class="sl--content-wrapper sl--content-wrapper-inactive">
+                                        <img src="img/game-cards//logos/tyranny-logo.png" class="card-logo">
+                    
+                                    </div>
+                                </div>
+                            </div>
+        
+                </div>
             </div>
         </div>
+    
+        </section>
+
+
+
     </section>
 
     
@@ -111,9 +243,9 @@
         -->
 
     </section>
+
     <section id="section3" class="js-main-section">
  
-
     </section>
     <section id="section4" class="js-main-section">
 
@@ -121,15 +253,141 @@
     <section id="section5" class="js-main-section">
 
     </section>
+    <section id="section6" class="js-main-section">
+
+    </section>
+    <section id="section7" class="js-main-section">
+
+    </section>
 
     <script src="js/pagePreloader.js"></script>
 
-    <!--
+    <!-- not working
+    <script src="js/circleCursor.js"></script>-->
+    <!-- 
     <script src="js/onePageScroll.js"></script>-->
     <script src="js/dottedSideNav.js"></script>
 
     <script src="js/menuButtonAnimation.js"></script>
     <script src="js/imageRevealGSAP.js"></script>
+
+    <script>
+        $(document).ready(function() {
+    "use strict";
+    var mySwiper = new Swiper(".game-cards_swiper-container", {
+      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev",
+      slidesPerView: 2.7,
+      centeredSlides: true,
+      breakpoints: {
+        1440: {
+          slidesPerView: 2.6
+        },
+        1439: {
+          slidesPerView: 1.45
+        },
+        1024: {
+          slidesPerView: 1.45
+        },
+        1023: {
+          slidesPerView: 2
+        },
+        768: {
+          slidesPerView: 2
+        },
+        568: {
+          slidesPerView: 1.5,
+          spaceBetween: 10
+        },
+        414: {
+          slidesPerView: 1.09,
+          spaceBetween: 3
+        },
+        320: {
+          slidesPerView: 1.09,
+          spaceBetween: 3
+        }
+      },
+    });
+
+    var $revealCardContentBtn = $(".sl--card-nav-container"),
+      $contentContainer = $(
+        ".sl-card-wrapper .sl--content-wrapper .sl--content-container"
+      ),
+      $navGFX = $(
+        ".sl-card-wrapper .sl--content-wrapper .sl--card-nav-container .sl--content-btn .card-nav-gfx"
+      );
+  
+
+      
+    $revealCardContentBtn.on("click", function() {
+      var parent = $(this).closest(".swiper-slide");
+  
+      parent
+        .siblings()
+        .find($contentContainer)
+        .removeClass("sl--card-reveal");
+      parent
+        .siblings()
+        .find($contentContainer)
+        .addClass("sl--card-hide");
+      parent.find($contentContainer).toggleClass("sl--card-hide sl--card-reveal");
+  
+      parent
+        .siblings()
+        .find(".sl--content-wrapper")
+        .removeClass("sl--content-wrapper-active");
+      parent
+        .siblings()
+        .find(".sl--content-wrapper")
+        .addClass("sl--content-wrapper-inactive");
+      parent
+        .find(".sl--content-wrapper")
+        .toggleClass("sl--content-wrapper-inactive sl--content-wrapper-active");
+  
+      // IC Nav GFX
+      parent
+        .siblings()
+        .find($navGFX)
+        .removeClass("sl--close-card-info");
+      parent
+        .siblings()
+        .find($navGFX)
+        .addClass("sl--show-card-info");
+      parent.find($navGFX).toggleClass("sl--show-card-info sl--close-card-info");
+    });
+  
+    /* Hide content on slide change 
+      -------------------------------------------------------*/
+    mySwiper.on("onSlideChangeStart", function() {
+      if ($contentContainer.hasClass("sl--card-reveal")) {
+        var $CI_ContentWrapper = $(".sl--content-wrapper");
+  
+        $contentContainer.removeClass("sl--card-reveal");
+        $contentContainer.addClass("sl--card-hide");
+        $navGFX.removeClass("sl--close-card-info");
+        $navGFX.addClass("sl--show-card-info");
+        $CI_ContentWrapper.removeClass("sl--content-wrapper-active");
+        $CI_ContentWrapper.addClass("sl--content-wrapper-inactive");
+      }
+    });
+  
+    // Media Query
+    var windowWidth = $(window).width();
+    if (windowWidth === 320) {
+    }
+    if (windowWidth === 375) {
+    }
+    if (windowWidth === 414) {
+    }
+    if (windowWidth === 768) {
+    }
+    if (windowWidth === 1024) {
+    }
+});
+
+
+    </script>
 
 </body>
 

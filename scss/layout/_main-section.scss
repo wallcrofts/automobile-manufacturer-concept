@@ -4,8 +4,6 @@ section {
     margin: 0;
     padding: 0;
 }
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -16,7 +14,6 @@ section {
     position: relative;
   }
 img {
-  
     //width: 50%;
     //object-fit: cover;
     //transform-origin: bottom; // that targets the image movement not curtain
@@ -26,6 +23,5 @@ img {
     position: relative;
     width: 80%;
     height: 80%;
-    
     overflow: hidden;
 }
