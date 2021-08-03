@@ -433,80 +433,70 @@ section {
 
 .test {
   position: absolute;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 75%;
+  height: 75%;
+  left: 0;
+  right: 0;
+  margin: auto;
   z-index: 99;
-}
-
-.cards-header {
-  display: inline-block;
-}
-
-.game-cards_heading {
-  position: relative;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-
-.game-cards_heading .heading_subtitle {
-  position: relative;
-  top: -.5em;
-  font-weight: 300;
-  margin-right: .25em;
-  font-size: 1.4em;
-  border-bottom: 5px solid #353535;
-}
-
-.game-cards_heading .heading_title {
-  font-size: 2.5em;
-  font-weight: 800;
-  display: inline;
-}
-
-.game-cards_description {
-  width: 100%;
-  line-height: 1.75;
+  overflow: hidden;
 }
 
 .game-cards_nav-buttons {
-  position: relative;
-  left: 25%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   height: 5em;
-  width: 7.5em;
+  width: 75%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
   background-image: none !important;
 }
 
-@media only screen and (min-width: 320px) {
-  .sl-nav {
-    display: none;
+/*
+  @media only screen and (min-width: 320px) {
+    .sl-nav {
+      display: none;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  
+  
   }
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
+  @media only screen and (min-width: 1024px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+    }
+  
+    .sl-nav {
+      display: block;
+    }
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: block;
-  }
-  .sl-nav {
-    display: block;
-  }
+*/
+.game-cards_swiper-container {
+  margin-left: 250px;
 }
 
 .swiper-slide {
-  margin-right: 10em;
+  margin-right: 50px;
   cursor: pointer;
 }
 
 .swiper-slide-prev .slide-cover, .swiper-slide-next .slide-cover, .slide-cover {
   height: 100%;
-  width: 25em;
+  width: 10em;
   position: absolute;
   top: 0;
   z-index: 2;
@@ -522,17 +512,9 @@ section {
   -webkit-transition: visibility 0s 0.5s, opacity 300ms;
   transition: visibility 0s 0.5s, opacity 300ms;
   height: 100%;
-  width: 25em;
+  width: 10em;
   z-index: 2;
   visibility: hidden;
-}
-
-.sl-img-2 {
-  background-image: url("../../../img/game-cards/cards/outerworlds-hero.png");
-}
-
-.sl-img-3 {
-  background-image: url("../../../img/game-cards/cards/outerworlds-hero.png");
 }
 
 @media only screen and (min-width: 320px) {
@@ -745,15 +727,16 @@ section {
   }
 }
 
+/* 
 @media only screen and (min-width: 414px) {
-  .sl-card-wrapper,
-  .sl--content-wrapper-inactive {
-    height: 650px;
-  }
-  .sl--card-hide {
-    height: 740px;
-    -webkit-transform: translate(0, 495px);
+         
+          .sl-card-wrapper,
+          .sl--content-wrapper-inactive {
+            height: 650px;
+          }
+          .sl--card-hide {
+            height: 740px;
             transform: translate(0, 495px);
-  }
-}
+          }
+}*/
 /*# sourceMappingURL=style.css.map */

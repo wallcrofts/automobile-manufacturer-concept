@@ -99,52 +99,32 @@
 
 .test {
     position: absolute;
-    top: 0;
-
-   z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75%;
+    height: 75%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+    overflow: hidden;
 }
 
 
-.cards-header {
-    //padding: 3em 12.5em 0;
-    display: inline-block;
-  }
-  
-  
-  .game-cards_heading {
-    position: relative;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin: 1em 0;
-    .heading_subtitle {
-        
-      position: relative;
-      top: -.5em;
-      font-weight: 300;
-      margin-right: .25em;
-      font-size: 1.4em;
-      border-bottom: 5px solid $grey;
-    }
-    .heading_title {
-    
-      font-size: 2.5em;
-      font-weight: 800;
-      display: inline;
-    }
-  }
-  
-  .game-cards_description {
-    width: 100%;
-    line-height: 1.75;
-  }
   
   
   .game-cards_nav-buttons {
-    position: relative;
-    left: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     height: 5em;
-    width: 7.5em;
+    width: 75%;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
+
+
   
   
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
@@ -154,7 +134,7 @@
   
   
   
-  
+  /*
   @media only screen and (min-width: 320px) {
     .sl-nav {
       display: none;
@@ -177,20 +157,25 @@
       display: block;
     }
   }
+*/
 
 
-
-
+.game-cards_swiper-container {
+  margin-left: 250px;
+}
 
 
   .swiper-slide {
-    margin-right: 10em;
+    margin-right: 50px;
     cursor: pointer;
   }
   .swiper-slide-prev .slide-cover, .swiper-slide-next .slide-cover, .slide-cover {
     //background-color: $bg-main;
     height: 100%;
-    width: 25em;
+    width: 10em;
+
+   
+
     position: absolute;
     top: 0;
     z-index: 2;
@@ -207,31 +192,12 @@
     transition: visibility 0s 0.5s, opacity 300ms;
     
     height: 100%;
-    width: 25em;
+    width: 10em;
     //background-color: $bg-main;
     z-index: 2;
     visibility: hidden;
     
   }
-  
-  
-  
-    
-  
-  
-  
-  
-  .sl-img-2 {
-    background-image: url("../../../img/game-cards/cards/outerworlds-hero.png");
-  }
-  .sl-img-3 {
-    background-image: url("../../../img/game-cards/cards/outerworlds-hero.png");
-  }
-  
-  
-  
-  
-  
   
   
   
@@ -363,10 +329,6 @@
 
 
 
-
-
-
-
     .card_cover {
         position: absolute;
         width: 100%;
@@ -483,8 +445,9 @@
         }
       }
       
-        
-      @media only screen and (min-width: 414px) {
+
+/* 
+@media only screen and (min-width: 414px) {
          
           .sl-card-wrapper,
           .sl--content-wrapper-inactive {
@@ -494,5 +457,4 @@
             height: 740px;
             transform: translate(0, 495px);
           }
-        }
-      
+}*/     
