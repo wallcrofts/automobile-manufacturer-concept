@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper-container', {
 	slidesPerView: 1,
 	loop: true,
 	speed: 600,
-	
+	spaceBetween: 20,
  	autoplay: {
 		delay: 3000,
  	},
@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper-container', {
 	coverflowEffect: {
 		rotate: 0,
 		stretch: 0,
-		depth: 100,
+		depth: 0,
 		modifier: 2,
 		slideShadows: true,
 	},
@@ -29,10 +29,7 @@ const swiper = new Swiper('.swiper-container', {
 		}
 	},
 
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
+
 
 	navigation: {
 		nextEl: '.swiper-button-next',
