@@ -466,20 +466,25 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 30% !important;
 }
 
-.article-content {
-  background-color: #666666ce;
-  padding: 1em;
-  width: 325px;
-  height: 550px;
+.slide-content {
+  background-color: #66666642;
+  width: 400px;
+  height: 600px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  cursor: pointer;
 }
 
-.article-content.active {
+.slide-content:hover {
+  border: 1px solid black;
+}
+
+.slide-content.active {
   -webkit-transform: scale(1);
           transform: scale(1);
 }

@@ -1,11 +1,8 @@
 const swiper = new Swiper('.swiper-container', {
-	//effect: 'coverflow',
-	//centeredSlides: true,
 	slidesPerView: 4,
-	//initialSlide: 1,
 	loop: true,
 	speed: 600,
-	
+	slideToClickedSlide: true,
 	/* 
 	coverflowEffect: {
 		rotate: 0,
@@ -37,13 +34,13 @@ const swiper = new Swiper('.swiper-container', {
 
 	on: {
 		init: function () {
-		  $('.swiper-slide-next .article-content').addClass('active');
+		  $('.swiper-slide-active .slide-content').addClass('active');
 		},
 		transitionStart: function() {
-		  $('.article-content').removeClass('active');
+		  $('.slide-content').removeClass('active');
 		},
 		transitionEnd: function(swiper) {
-		  $('.swiper-slide-next .article-content').addClass('active');
+		  $('.swiper-slide-active .slide-content').addClass('active');
 		}
 	  }
 });
