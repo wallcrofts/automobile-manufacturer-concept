@@ -1,22 +1,20 @@
 const swiper = new Swiper('.swiper-container', {
-	effect: 'coverflow',
-	centeredSlides: true,
-	slidesPerView: 1,
+	//effect: 'coverflow',
+	//centeredSlides: true,
+	slidesPerView: 4,
+	//initialSlide: 1,
 	loop: true,
 	speed: 600,
-	spaceBetween: 20,
- 	autoplay: {
-		delay: 3000,
- 	},
 	
+	/* 
 	coverflowEffect: {
 		rotate: 0,
 		stretch: 0,
 		depth: 0,
 		modifier: 2,
-		slideShadows: true,
+		//slideShadows: true,
 	},
-	
+
 	breakpoints: {
 		320: {
 			slidesPerView: 2,
@@ -27,7 +25,8 @@ const swiper = new Swiper('.swiper-container', {
 		990: {
 			slidesPerView: 4,
 		}
-	},
+	},*/
+	
 
 
 
@@ -35,4 +34,16 @@ const swiper = new Swiper('.swiper-container', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+
+	on: {
+		init: function () {
+		  $('.swiper-slide-next .article-content').addClass('active');
+		},
+		transitionStart: function() {
+		  $('.article-content').removeClass('active');
+		},
+		transitionEnd: function(swiper) {
+		  $('.swiper-slide-next .article-content').addClass('active');
+		}
+	  }
 });
