@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper-container', {
 	slidesPerView: 4,
 	loop: true,
-	speed: 600,
+	speed: 400,
 	slideToClickedSlide: true,
 	/* 
 	coverflowEffect: {
