@@ -1,5 +1,5 @@
 .model-three-section {
-    height: 200vh;
+    height: 300vh;
     top: 0;
 }
 .subsection-one {
@@ -27,16 +27,16 @@
 }
 .hero-image-model-three {
     z-index: 2;
-    width: 55%;
+    width: 50%;
     position: relative;
-    left: 3%;
 }
 .hero-image-text {
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: -3%;
     color: $grey;
     font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 4.5vw;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -201,4 +201,85 @@
 }
 .slide-img-m306 {
     background-image: url("img/features/m3-06.png");
+}
+
+.detailed-specs-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    width: 70vw;
+    height: 75vh;
+    h3 {
+        color: $grey-alt;
+        font-family: 'Lato', 'sans-serif';
+        font-weight: 300;
+        font-size: 26px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        span {
+            font-weight: bold;
+        }
+        margin: 0;
+    }
+}
+.specs-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 75px 0;
+}
+
+
+.tab-slider--nav{
+	width: 100%;
+	//float: left;
+
+}
+.tab-slider--tabs{
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+
+	overflow: hidden;
+	background: #fff;
+	
+	user-select: none; 
+
+    
+	&:after{
+		content: "";
+		width: 50%;
+		background: $grey;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 250ms ease-in-out;
+
+	}
+	&.slide:after{
+		left: 50%;
+	}
+}
+
+.tab-slider--trigger {
+	font-size: 12px;
+	line-height: 1;
+	font-weight: bold;
+	color: $grey;
+	text-transform: uppercase;
+	text-align: center;
+	//padding: 11px $base-margin;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	display: inline-block;
+	transition: color 250ms ease-in-out;
+	user-select: none; 
+	&.active {
+		color: #fff;
+	}
 }
