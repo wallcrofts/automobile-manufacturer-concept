@@ -34,12 +34,12 @@
 .hero-image-text {
     z-index: 1;
     position: absolute;
-    top: 1%;
+    top: 0;
     color: $grey;
     font-family: 'Lato', sans-serif;
     font-size: 4.5vw;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
 }
 .red-underlay {
     z-index: 1;
@@ -119,6 +119,7 @@
     background-size: cover;
     cursor: grab;
     transition: all 0.3s ease;
+    box-shadow: 10px 10px 20px 0px #3C3C3C4D;
 
     background-color: #30303042; // temp
 }
@@ -139,19 +140,31 @@
     z-index: 4;
 }
 .slide-content {
+    h5 {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        font-weight: normal;
+        margin: 5px 0;
+    }
     h4 {
         color: $white;
         text-transform: uppercase;
         font-size: 28px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.75px;
+        margin: 0;
     }
     p {
         font-size: 14px;
         color: #D1D1D1;
+        width: 75%;
     }
     a {
         text-transform: uppercase;
         align-self: flex-end;
+        color: $white;
+        letter-spacing: 2px;
     }
 }
 .slide-overlay {
@@ -170,6 +183,22 @@
     mix-blend-mode: normal;
     z-index: 2;
 }
+
 .slide-img-m301 {
     background-image: url("img/features/m3-01.png");
+}
+.slide-img-m302 {
+    background-image: url("img/features/m3-02.png");
+}
+.slide-img-m303 {
+    background-image: url("img/features/m3-03.png");
+}
+.slide-img-m304 {
+    background-image: url("img/features/m3-04.png");
+}
+.slide-img-m305 {
+    background-image: url("img/features/m3-05.png");
+}
+.slide-img-m306 {
+    background-image: url("img/features/m3-06.png");
 }
