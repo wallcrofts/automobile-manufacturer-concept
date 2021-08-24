@@ -210,6 +210,7 @@
     right: 10%;
     width: 70vw;
     height: 75vh;
+    padding: 50px 0;
     h3 {
         color: $grey-alt;
         font-family: 'Lato', 'sans-serif';
@@ -229,7 +230,10 @@
     padding: 75px 0;
 }
 .specs-options-nav {
-    width: 500px;
+    width: 25%;
+}
+.specs-content {
+    width: 75%;
 }
 #specs-options-nav-items {
 	margin: 0;
@@ -241,7 +245,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 500;
-        color: $grey-alt2;
+        color: $grey-light;
         position: relative;
         z-index: 2;
         cursor: pointer;
