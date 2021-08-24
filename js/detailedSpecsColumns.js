@@ -3,16 +3,20 @@ $("document").ready(function(){
     $(".tab-slider--body:first").show();
   });
   
-  $(".tab-slider--nav li").click(function() {
+  
+  $(".specs-options-nav li").click(function() {
+
     $(".tab-slider--body").hide();
     var activeTab = $(this).attr("rel");
     $("#"+activeTab).fadeIn();
       if($(this).attr("rel") == "tab2"){
-          $('.tab-slider--tabs').addClass('slide');
+          $('#specs-options-nav-items').addClass('slide');
       }else{
-          $('.tab-slider--tabs').removeClass('slide');
+          $('#specs-options-nav-items').removeClass('slide');
       }
-    $(".tab-slider--nav li").removeClass("active");
+
+    $(".specs-options-nav li").removeClass("active");
+
     $(this).addClass("active");
   });
   
