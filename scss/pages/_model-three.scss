@@ -51,7 +51,7 @@
     bottom: 22.5%;
     text-align: center;
 }
-.specs-container {
+.specs-overview-container {
     color: $grey;
     margin: 25px 0;
     .spec-wrapper {
@@ -104,7 +104,7 @@
     overflow: hidden;
 }
 .swiper-button-prev, .swiper-button-next {
-    color: $grey !important;
+    color: $grey !important; // needed to override default swiper styling
 }
 .swiper-button-prev {
     margin-left: -5%;
@@ -113,16 +113,14 @@
     margin-right: -5%;
 }
 .swiper-slide {
-    height: 600px !important;
-    width: 400px !important;
+    height: 600px !important; // needed to override default swiper styling
+    width: 400px !important; // needed to override default swiper styling
     transform: scale(0.7);
     background-position: center;
     background-size: cover;
     cursor: grab;
     transition: all 0.3s ease;
     box-shadow: 10px 10px 20px 0px #3C3C3C4D;
-
-    background-color: #30303042; // temp
 }
 .swiper-slide:active {
     cursor: grabbing;
