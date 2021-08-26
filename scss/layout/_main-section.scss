@@ -25,3 +25,16 @@ img {
     height: 80%;
     overflow: hidden;
 }
+.expand-link {
+    text-transform: uppercase;
+    svg {
+        vertical-align: middle;
+    }
+}
+.section-footer {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
