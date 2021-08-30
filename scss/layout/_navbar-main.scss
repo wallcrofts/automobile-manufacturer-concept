@@ -9,7 +9,6 @@
         list-style: none;
         margin: 0;
         padding: 0;
-
         li {
             display: inline;
             vertical-align: middle;
@@ -45,14 +44,15 @@
 .website-upper-navbar:before {
   content: '';
   position: absolute;
-  height: 200px;
-  background: -webkit-linear-gradient(top, transparent,rgba(0,0,0,0.3) 40%,#000);
-  background: linear-gradient(0deg, transparent 0,rgba(0,0,0,0.3) 40%,#000);
-  opacity: .7;
+  height: 100px;
+  background: -webkit-linear-gradient(top, transparent,#E9E9E7 100%,#E9E9E7);
+  background: linear-gradient(0deg, transparent 0,#E9E9E7 100%,#E9E9E7);
+  opacity: .5;
   pointer-events: none;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 

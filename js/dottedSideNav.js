@@ -48,6 +48,7 @@ jQuery(document).ready(function($){
 	}
 });
 
+
 $('#vertical-nav').mouseover(function () {
 	$(this).css("z-index", "99")
 });
