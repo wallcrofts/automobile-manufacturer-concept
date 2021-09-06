@@ -300,15 +300,29 @@ a {
 }
 
 .social-icons-hub {
-  color: #636363;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   bottom: 90px;
   right: 90px;
 }
 
 .social-icons-hub ul {
   list-style: none;
+}
+
+.social-icons-hub ul li {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.social-icons-hub ul li a {
+  color: #636363;
+  opacity: 0.5;
+}
+
+.social-icons-hub ul li a:hover {
+  color: #C70006;
 }
 
 section {
@@ -786,5 +800,23 @@ section {
 
 .specs-expand-button-container .expand-link svg {
   fill: #E82127;
+}
+
+.solar-roof-section {
+  height: 100vh;
+  background-image: url("img/background-image-solar-roof.png");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.smoke-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */
