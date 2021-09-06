@@ -72,3 +72,11 @@
     letter-spacing: 1px;
     opacity: 1;
 }
+
+.scroll-down-prompt svg {
+    fill: $grey-light;
+    position: fixed;
+    z-index: 1;
+    bottom: 90px;
+    left: 90px;
+}

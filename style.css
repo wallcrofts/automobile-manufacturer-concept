@@ -291,6 +291,14 @@ a {
   opacity: 1;
 }
 
+.scroll-down-prompt svg {
+  fill: #636363;
+  position: fixed;
+  z-index: 1;
+  bottom: 90px;
+  left: 90px;
+}
+
 section {
   position: relative;
   height: 100vh;
