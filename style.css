@@ -299,6 +299,18 @@ a {
   left: 90px;
 }
 
+.social-icons-hub {
+  color: #636363;
+  position: fixed;
+  z-index: 1;
+  bottom: 90px;
+  right: 90px;
+}
+
+.social-icons-hub ul {
+  list-style: none;
+}
+
 section {
   position: relative;
   height: 100vh;
