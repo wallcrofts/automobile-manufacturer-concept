@@ -3,7 +3,7 @@ $(document).ready(function() {
         preloaderFadeOutTime = 750;
         function hidePreloader() {
             var preloader = $('.spinner-wrapper');
-            preloader.delay(2000).fadeOut(preloaderFadeOutTime);
+            //preloader.delay(2000).fadeOut(preloaderFadeOutTime);
         }
         hidePreloader();
         });
