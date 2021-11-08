@@ -458,6 +458,39 @@ section {
   font-size: 4.5vw;
   text-transform: uppercase;
   letter-spacing: 10px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.fadeInBottom {
+  -webkit-animation-name: fadeInBottom;
+          animation-name: fadeInBottom;
+}
+
+@-webkit-keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .red-underlay {
