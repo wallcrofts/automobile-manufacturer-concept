@@ -1,6 +1,12 @@
 @media (max-width: 480px) {
+    #vertical-nav {
+        display: none;
+    }
+    .model-three-section .hero-image-container .red-underlay {
+        visibility: hidden;
+    }
     .website-upper-navbar .links-wrapper {
-      display: none;
+        display: none;
     }
   
   

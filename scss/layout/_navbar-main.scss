@@ -23,11 +23,12 @@
     }
     .logo-wrapper {
         img {
-            width: 200px;
+            width: 65px;
         }
     }
     .right-side {
         display: flex;
+
         ul li {
             margin-right: 35px;
             &:last-child {
@@ -59,6 +60,9 @@
 #nav-icon3 {
     width: 34px;
     position: relative;
+    top: 25%;
+
+    
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -74,7 +78,7 @@
     position: absolute;
     height: 4.5px;
     width: 100%;
-    background: #3C3C3C;
+    background: #000000;
     border-radius: 0 0 10px 10px;
     opacity: 1;
     left: 0;

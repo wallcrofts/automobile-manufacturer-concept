@@ -103,7 +103,7 @@ a {
 }
 
 .website-upper-navbar .logo-wrapper img {
-  width: 200px;
+  width: 65px;
 }
 
 .website-upper-navbar .right-side {
@@ -146,6 +146,7 @@ a {
 #nav-icon3 {
   width: 34px;
   position: relative;
+  top: 25%;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
@@ -158,7 +159,7 @@ a {
   position: absolute;
   height: 4.5px;
   width: 100%;
-  background: #3C3C3C;
+  background: #000000;
   border-radius: 0 0 10px 10px;
   opacity: 1;
   left: 0;
@@ -864,6 +865,12 @@ section {
 }
 
 @media (max-width: 480px) {
+  #vertical-nav {
+    display: none;
+  }
+  .model-three-section .hero-image-container .red-underlay {
+    visibility: hidden;
+  }
   .website-upper-navbar .links-wrapper {
     display: none;
   }
