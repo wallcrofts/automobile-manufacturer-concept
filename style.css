@@ -835,6 +835,16 @@ section {
   fill: #E82127;
 }
 
+@media (max-width: 1440px) {
+  .hero-image-model-three {
+    width: 55%;
+  }
+  .hero-image-text {
+    top: 5%;
+    letter-spacing: 5px;
+  }
+}
+
 .solar-roof-section {
   height: 100vh;
   background-image: url("img/background-image-solar-roof.png");
@@ -851,5 +861,11 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .website-upper-navbar .links-wrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
