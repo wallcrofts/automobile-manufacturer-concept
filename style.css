@@ -836,16 +836,16 @@ section {
   fill: #E82127;
 }
 
+/* 
 @media (max-width: 1440px) {
-  .hero-image-model-three {
-    width: 55%;
-  }
-  .hero-image-text {
-    top: 5%;
-    letter-spacing: 5px;
-  }
-}
-
+    .hero-image-model-three {
+        width: 55%;
+    }
+    .hero-image-text {
+        top: 5%;
+        letter-spacing: 5px;
+    }
+}*/
 .solar-roof-section {
   height: 100vh;
   background-image: url("img/background-image-solar-roof.png");
@@ -865,6 +865,24 @@ section {
 }
 
 @media (max-width: 480px) {
+  .website-upper-navbar {
+    padding: 10px 50px;
+  }
+  .subsection-one {
+    background-image: none;
+  }
+  .hero-image-container {
+    position: absolute;
+    top: 25%;
+  }
+  .hero-image-model-three {
+    width: 80%;
+  }
+  .hero-image-text {
+    font-size: 7.5vw;
+    top: 0;
+    letter-spacing: 3px;
+  }
   #vertical-nav {
     display: none;
   }
@@ -872,6 +890,9 @@ section {
     visibility: hidden;
   }
   .website-upper-navbar .links-wrapper {
+    display: none;
+  }
+  .social-icons-hub {
     display: none;
   }
 }
