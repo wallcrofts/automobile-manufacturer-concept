@@ -34,12 +34,7 @@ a {
 
 //@import "scss/layout/main-section";
 
-section {
-    //position: relative;
-    //height: 100vh;
-    margin: 0;
-    padding: 0;
-}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -126,8 +121,21 @@ main {
         }
     }
 }
+@media (max-width: 1360px) { 
+    .site-content-cars {
+        h1 {
+            font-size: 5rem;
+        }
+    }
 
-
+}
+@media (max-width: 980px) {
+    .site-content-cars {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
 
 
 
